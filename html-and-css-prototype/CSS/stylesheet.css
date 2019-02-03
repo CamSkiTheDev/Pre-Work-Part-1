@@ -1,4 +1,5 @@
 /* Global resets */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -12,6 +13,7 @@ body {
 }
 
 /* Fonts */
+
 h1 {
 	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
 	font-size: 2.5em;
@@ -40,3 +42,152 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mainContainer {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	max-width: 350px;
+}
+
+.projectHeader {
+	position: relative;
+	margin: 10px 0;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #424242;
+	color: #fff;
+	font-weight: 400;
+	border-radius: 3px;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+}
+
+.projectHeader:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 85%;
+	width: 0;
+	height: 0;
+	border-top: solid 8px #424242;
+	border-left: solid 5px transparent;
+	border-right: solid 5px transparent;
+}
+
+.projectContainer {
+	margin: 20px auto;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: solid 1px #777;
+}
+
+.progressBar {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 15px;
+	background: #eaeaea;
+	border-bottom: solid 1px #777;
+}
+
+.progressBar>div {
+	margin: 0;
+	padding: 0;
+	width: 75%;
+	height: 15px;
+	background: #ef5f3c;
+}
+
+.projectContent {
+	margin: 15px auto;
+	padding: 0px 25px;
+}
+
+.projectContent>span {
+	margin: 0px;
+	padding: 15px 0px;
+	display: inline-block;
+}
+
+.projectContent>p {
+	margin: 0px;
+	padding: 5px 0px 15px;
+	display: inline-block;
+}
+
+.projectContent>div {
+	margin: 10px 0px;
+	padding: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.projectContent>div>input {
+	margin: 0px;
+	padding: 10px 5px;
+	width: 40%;
+	height: 45px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 3px;
+	border: solid 1px #eaeaea;
+}
+
+#giveBtn {
+	margin: 0px;
+	padding: 10px 5px;
+	width: 40%;
+	height: 45px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 3px;
+	background: #1cbc2c;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.projectContent>a {
+	text-decoration: none;
+	font-style: italic;
+	color: #20a1d4
+}
+
+.buttonContainer {
+	margin: 20px 0px;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buttonContainer>button {
+	margin: 0px;
+	padding: 10px;
+	width: 45%;
+	font-weight: 700;
+	color: #777;
+	border-radius: 3px;
+	border: solid 1px #777;
+	cursor: pointer;
+}
+
+#orange {
+	color: #ef5f3c;
+}
